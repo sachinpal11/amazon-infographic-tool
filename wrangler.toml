@@ -1,0 +1,14 @@
+name = "amazon-infographic-tool"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+# All data and image files live here. Create it once with:
+#   npx wrangler d1 create infographic
+# then paste the printed database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "infographic"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+# Secrets (set in the dashboard under Settings > Variables and Secrets, or with `npx wrangler secret put NAME`):
+#   ANTHROPIC_API_KEY, GEMINI_API_KEY, APP_PASSWORD

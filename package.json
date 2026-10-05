@@ -10,7 +10,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "node scripts/test-core.mjs"
+    "test": "node scripts/test-worker.mjs",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy"
   },
   "dependencies": {
     "jszip": "^3.10.1",
